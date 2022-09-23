@@ -1,5 +1,13 @@
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?>>
-    <h1 class="entry-title"> <?php the_title(); ?></h1>
+    <header class="title-page-wraper">
+        <div class="container">
+            <div class="row">
+                <h1 class="entry-title title-page">
+                   <?php the_title(); ?>
+                </h1>
+            </div>
+        </div>
+    </header>
     <div class="meta-group">
         <div class="meta meta-category">
             <span><?php _e(' Kategoria: ', 'icx' ); ?></span>

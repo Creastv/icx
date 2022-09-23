@@ -1,5 +1,7 @@
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?>>
-    <h2 class="entry-title"><?php the_title(); ?></h2>
+    <h2 class="entry-title">
+         <?php get_template_part('templates-parts/header/header', 'title'); ?>
+    </h2>
     <div class="meta-group">
         <div class="meta meta-category">
             <span><?php _e(' Kategoria: ', 'icx' ); ?></span>

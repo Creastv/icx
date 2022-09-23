@@ -15,19 +15,12 @@
 
 <body <?php body_class(); ?>>
     <header id="header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col col-1 top">
-                <?php get_template_part('templates-parts/header/navbar'); ?>
-                </div>
-                <?php if(is_page(38)) { ?>
-
-                <?php } else { ?>
-                <div class="col col-1">
-                <?php get_template_part('templates-parts/header/title-page'); ?>
-                </div>
-                <?php } ?>
+                <?php get_template_part('templates-parts/header/header', 'brand'); ?>
+                <?php get_template_part('templates-parts/header/header', 'nav'); ?>
+                <?php get_template_part('templates-parts/header/header', 'burger'); ?>
             </div>
         </div>
     </header>
-    <main id="main" class="container-fluid">
+    <main id="main" class="container">

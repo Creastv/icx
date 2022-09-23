@@ -38,6 +38,23 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.error404 h1 {
+  font-size: 120px !important;
+}
+
+#error {
+  padding: 0 0 50px 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -60,25 +77,48 @@ body {
 
 .container {
   width: calc(100% - 10%);
-  padding: 0 60px;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 998px) {
-  .container {
-    padding: 0;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     width: calc(100% - 30px);
+  }
+}
+
+.row {
+  padding: 0 60px;
+}
+
+@media only screen and (max-width: 998px) {
+  .row {
     padding: 0;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .row {
+    padding: 0;
+  }
+}
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+#footer {
+  padding: 150px 0 110px 0;
+  background-color: #004e9d;
+}
+
 #header {
-  padding: 36px 0;
+  padding: 50px 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -122,6 +162,7 @@ body {
 
 .navbar .header-nav ul {
   padding: 0px;
+  margin: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,7 +186,7 @@ body {
 }
 
 .navbar .header-nav ul li a {
-  padding: 25px;
+  padding: 10px 25px;
   display: block;
   font-size: 22px;
   text-transform: uppercase;
@@ -228,11 +269,12 @@ body {
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 0;
   padding: 30px 0;
   position: relative;
   background-color: aliceblue;
+  text-align: center;
 }
 
 .title-page-wraper .title-page {
@@ -241,5 +283,48 @@ body {
   font-size: 45px;
   font-weight: 900;
   color: #7a6dc7;
+}
+
+.meta-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.meta-group .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meta-group .meta span {
+  padding: 5px;
+}
+
+.meta-group .meta ul {
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  background-color: #004e9d;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 21px;
+  padding: 30px;
+  line-height: 0;
+  display: inline-block;
 }
 /*# sourceMappingURL=icx-main.css.map */

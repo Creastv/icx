@@ -26,3 +26,4 @@
         </div>
     </header>
     <main id="main" class="container">
+        <div class="row">

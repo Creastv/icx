@@ -20,14 +20,25 @@ body {
   // max-width: 1524px;
   // max-width: 80%;
   width: calc(100% - 10%);
-  padding: 0 60px;
   margin: 0 auto;
+  @media #{$sm} {
+    width: calc(100% - 30px);
+  }
+}
+
+.row{
+  padding: 0 60px;
   @media #{$md} {
-    // width: calc(100% - 5%);
     padding: 0;
   }
   @media #{$sm} {
-    width: calc(100% - 30px);
     padding: 0;
   }
+
+}
+.row-flex{
+  display: flex;
+}
+.col-2{
+  width: 50%;
 }

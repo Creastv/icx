@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="col-2 right">
-                    <?php echo do_shortcode('[contact-form-7 id="14" title="Formularz 1"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="14" title="Formularz 1"]'); ?> 
                 </div>
             </div>
         </div>

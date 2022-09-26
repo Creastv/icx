@@ -70,13 +70,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: 'Futura PT';
+  font-family: "Futura PT";
   font-weight: 500;
   overflow-x: hidden;
 }
 
 .container {
-  width: calc(100% - 10%);
+  max-width: 1584px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -96,8 +97,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .row {
+.row-left {
+  padding-left: 60px;
+}
+
+@media only screen and (max-width: 998px) {
+  .row-left {
     padding: 0;
   }
 }
@@ -108,17 +113,123 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 768px) {
+  .row-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.col-f-auto {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.col-1 {
+  width: 100%;
+}
+
 .col-2 {
   width: 50%;
 }
 
+@media only screen and (max-width: 768px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
 #footer {
-  padding: 150px 0 110px 0;
-  background-color: #004e9d;
+  padding: 100px 0 92px 0;
+  background: #004e9d;
+  background: linear-gradient(97deg, #004e9d 0%, #705ac5 83%);
+}
+
+@media only screen and (max-width: 998px) {
+  #footer {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .left-right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .left {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .left .row-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .left .row-flex .col-2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .left .row-flex .col-2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left .row-flex .col-2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .right {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.wrap-footer-inf {
+  padding-left: 50px;
+  border-left: 1px solid #7a6dc7;
+  height: 100%;
+}
+
+.wrap-footer-inf .footer-info {
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
 #header {
-  padding: 50px 0;
+  padding: 37px 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -140,6 +251,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+}
+
+.navbar .nav-brand svg {
+  width: 158px;
+  height: 91px;
 }
 
 .navbar .header-nav {
@@ -326,5 +442,104 @@ body {
   padding: 30px;
   line-height: 0;
   display: inline-block;
+}
+
+.row-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-form .col-2 {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .row-form .col-2 {
+    width: 100%;
+  }
+}
+
+.row-form .col-1 {
+  width: 100%;
+}
+
+.group-form {
+  padding: 0 15px;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+@media only screen and (max-width: 768px) {
+  .group-form {
+    padding: 0;
+  }
+}
+
+.group-form .form-control {
+  width: 100%;
+  padding: 10px 27px;
+  font-size: 24px;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.group-form textarea {
+  height: 165px;
+}
+
+.accept {
+  color: #fff !important;
+  font-size: 14px;
+}
+
+.btn-form {
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-form {
+    width: 100%;
+    display: block;
+  }
+}
+
+.btn-form .wpcf7-submit {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 21px 56px;
+  color: #004e9d;
+  border: none;
+  background-color: #00f6ff;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-form .wpcf7-submit {
+    width: 100%;
+    display: block;
+  }
+}
+
+.btn-form .wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 15px;
+  border: 2px solid #00a0d2 !important;
+  color: #fff !important;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
 }
 /*# sourceMappingURL=icx-main.css.map */

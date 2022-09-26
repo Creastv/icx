@@ -10,35 +10,47 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: 'Futura PT';
+  font-family: "Futura PT";
   font-weight: 500;
   overflow-x: hidden;
 }
 
-
-.container{
-  // max-width: 1524px;
-  // max-width: 80%;
-  width: calc(100% - 10%);
+.container {
+  max-width: 1584px;
+  width: 100%;
   margin: 0 auto;
   @media #{$sm} {
     width: calc(100% - 30px);
   }
 }
 
-.row{
+.row {
   padding: 0 60px;
   @media #{$md} {
     padding: 0;
   }
-  @media #{$sm} {
+}
+.row-left {
+  padding-left: 60px;
+  @media #{$md} {
     padding: 0;
   }
-
 }
-.row-flex{
+.row-flex {
   display: flex;
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
 }
-.col-2{
+.col-f-auto {
+  flex: auto;
+}
+.col-1 {
+  width: 100%;
+}
+.col-2 {
   width: 50%;
+  @media #{$sm} {
+    width: 100%;
+  }
 }

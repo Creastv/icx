@@ -1,0 +1,88 @@
+section.slider {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #004e9d;
+  background-size: cover;
+  background-position: center 150%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+
+  @media #{$sm} {
+    height: 70vh;
+    background-position: 58% center;
+  }
+  .content-wraper {
+    position: absolute;
+    top: 180px;
+    padding-left: 60px;
+    @media #{$sm} {
+      padding-left: 30px;
+    }
+    @media #{$xs} {
+      padding-left: 0;
+    }
+    .content {
+      width: 50%;
+      @media #{$sm} {
+        width: 100%;
+      }
+      h1 {
+        font-size: 80px;
+        font-size: 4.2vw;
+        line-height: 81px;
+        line-height: 5vw;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 25px;
+        @media #{$lg} {
+          font-size: 80px;
+          font-size: 7vw;
+          line-height: 7vw;
+        }
+        @media #{$sm} {
+          font-size: 51px;
+          line-height: 56px;
+        }
+      }
+      .line {
+        display: block;
+        width: 200px;
+        background-color: $main3;
+        height: 5px;
+      }
+      p {
+        font-size: 41px;
+        font-size: 2vw;
+        color: #fff;
+        @media #{$lg} {
+          font-size: 41px;
+          font-size: 4vw;
+          line-height: 4vw;
+        }
+        @media #{$sm} {
+          font-size: 21px;
+          line-height: 26px;
+        }
+        span {
+          color: $main3;
+        }
+      }
+    }
+  }
+  .bg-slider {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 80px;
+  }
+  .border {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+  }
+}

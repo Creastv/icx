@@ -34,13 +34,17 @@ a {
   color: #004e9d;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 900;
 }
 
 p {
   font-size: 16px;
-  color: #fff;
 }
 
 .text-center {
@@ -226,15 +230,22 @@ body {
   line-height: 50px;
   letter-spacing: 2px;
   margin: 0;
+  color: #fff;
 }
 
 #header {
   padding: 37px 0;
 }
 
+@media only screen and (max-width: 998px) {
+  #header {
+    padding: 15px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #header {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 }
 
@@ -256,6 +267,13 @@ body {
 .navbar .nav-brand svg {
   width: 158px;
   height: 91px;
+}
+
+@media only screen and (max-width: 460px) {
+  .navbar .nav-brand svg {
+    width: 100px;
+    height: 50px;
+  }
 }
 
 .navbar .header-nav {
@@ -431,6 +449,126 @@ body {
 .meta-group .meta ul {
   padding: 0;
   list-style: none;
+}
+
+section.slider {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #004e9d;
+  background-size: cover;
+  background-position: center 150%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  section.slider {
+    height: 70vh;
+    background-position: 58% center;
+  }
+}
+
+section.slider .content-wraper {
+  position: absolute;
+  top: 180px;
+  padding-left: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  section.slider .content-wraper {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  section.slider .content-wraper {
+    padding-left: 0;
+  }
+}
+
+section.slider .content-wraper .content {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  section.slider .content-wraper .content {
+    width: 100%;
+  }
+}
+
+section.slider .content-wraper .content h1 {
+  font-size: 80px;
+  font-size: 4.2vw;
+  line-height: 81px;
+  line-height: 5vw;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.slider .content-wraper .content h1 {
+    font-size: 80px;
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.slider .content-wraper .content h1 {
+    font-size: 51px;
+    line-height: 56px;
+  }
+}
+
+section.slider .content-wraper .content .line {
+  display: block;
+  width: 200px;
+  background-color: #00f6ff;
+  height: 5px;
+}
+
+section.slider .content-wraper .content p {
+  font-size: 41px;
+  font-size: 2vw;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.slider .content-wraper .content p {
+    font-size: 41px;
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.slider .content-wraper .content p {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+section.slider .content-wraper .content p span {
+  color: #00f6ff;
+}
+
+section.slider .bg-slider {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: 80px;
+}
+
+section.slider .border {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
 }
 
 .btn {

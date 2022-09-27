@@ -619,11 +619,13 @@ body {
 
 section.klienci {
   padding: 80px 0;
+  margin-top: -80px;
 }
 
 @media only screen and (max-width: 768px) {
   section.klienci {
     padding: 40px 0;
+    margin-top: -40px;
   }
 }
 
@@ -643,6 +645,7 @@ section.klienci .ornament:before {
   content: "";
   display: block;
   position: relative;
+  z-index: 9;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);

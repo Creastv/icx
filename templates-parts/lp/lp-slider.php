@@ -15,6 +15,5 @@
         height="97.5px" viewBox="0 0 963 97.5" style="enable-background:new 0 0 963 97.5;" xml:space="preserve">
     <polygon fill='#FFFFFF' points="0,0.5 100,0.5 100,76.5 176.5,0 963,0 963,97.5 0,97.5 "/>
     </svg>
-
     <!-- <img class="bg-slider" src="<?php echo get_template_directory_uri() ?>/src/img/slider.png" alt="Technologie dla Biznesu"> -->
 </section>

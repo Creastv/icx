@@ -1,4 +1,13 @@
 </div>
+<div class="container">
+    <div class="row row-flex">
+        <div class="col-1">
+            <div class="title-section">
+                <h2 class="title">Kontakt</h2>
+            </div>
+        </div>
+    </div>
+</div>
 </main>
  <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
         <div class="container">

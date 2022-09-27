@@ -27,20 +27,24 @@ body {
 .row {
   padding: 0 60px;
   @media #{$md} {
-    padding: 0;
+    padding: 15px;
+  }
+  @media #{$sm} {
+    padding: 0px;
   }
 }
 .row-left {
   padding-left: 60px;
   @media #{$md} {
-    padding: 0;
+    padding-left: 15px;
+  }
+  @media #{$sm} {
+    padding: 0px;
   }
 }
 .row-flex {
   display: flex;
-  @media #{$sm} {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 .col-f-auto {
   flex: auto;
@@ -50,6 +54,15 @@ body {
 }
 .col-2 {
   width: 50%;
+  @media #{$sm} {
+    width: 100%;
+  }
+}
+.col-4 {
+  width: 33.333%;
+  @media #{$lg} {
+    width: 50%;
+  }
   @media #{$sm} {
     width: 100%;
   }

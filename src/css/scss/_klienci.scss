@@ -1,0 +1,16 @@
+section.klienci {
+  .carousel {
+    .logo {
+      img {
+        width: 100%;
+        height: auto;
+        padding: 15px 30px;
+        filter: grayscale(100%);
+        transition: 0.3s all;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}

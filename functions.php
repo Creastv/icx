@@ -44,7 +44,8 @@ function icx_scripts() {
 	wp_enqueue_style( 'icx-custome-style', get_template_directory_uri().'/src/css/icx-main.min.css#deferload' ); 
 	wp_enqueue_script('icx-main', get_template_directory_uri().'/src/js/icx-main.js#deferload', array( 'jquery' ),'3', true );
     wp_enqueue_style( 'icx-svipeer_css', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
-    wp_enqueue_script('icx-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js#asyncload',  array(), '20130456', true );
+    wp_enqueue_script('icx-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js#deferload',  array(), '20130456', true );
+	wp_enqueue_script( 'cx-logo', get_template_directory_uri() . '/src/js/logos.js', array(), '20130457', true );
 }
 add_action( 'wp_enqueue_scripts', 'icx_scripts' );
 require get_template_directory() . '/func/clean-up.php';

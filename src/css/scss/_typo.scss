@@ -12,6 +12,11 @@ h6 {
 p {
   font-size: 16px;
   // color:#fff;
+  // font-size: 25px;
+  // letter-spacing: 2px;
+  @media #{$sm} {
+    font-size: 16px !important;
+  }
 }
 .text-center {
   text-align: center;
@@ -24,4 +29,20 @@ p {
 
 #error {
   padding: 0 0 50px 0;
+}
+
+.title-section {
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 75px;
+    color: $main2;
+    margin: 0;
+    padding: 0;
+    @media #{$sm} {
+      font-size: 41px;
+    }
+  }
 }

@@ -55,9 +55,7 @@ add_action('init', 'prefix_remove_unnecessary_tags');
 
 // disable gut for pages
 function icx_disable_gutenberg( $can_edit, $post ) {
-  if( $post->post_type !== 'page' ) {
-    return true;
-  }
+
   return false;
 }
 

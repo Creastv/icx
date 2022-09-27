@@ -1,3 +1,9 @@
+<?php
+$title = get_field('tytul_onas');
+$opis = get_field('opis_onas');
+$opis2= get_field('opis2_onas');
+?>
+
 <section id="o-nas" class="o-nas">
     <div class="conteiner">
         <div class="row row-flex">
@@ -5,13 +11,13 @@
                 <div class="wrap-content">
                     <div class="space"></div>
                     <div class="title-section">
-                        <h2 class="title">O nas</h2>
+                        <h2 class="title"><?php echo $title; ?></h2>
                     </div>
                 </div>
             
                 <div class="wrap-content">
                     <div class="content">
-                        <p>Firma ICX powstała z pasji do technologii oraz głębokiego zrozumienia potrzeb optymalizacji procesów w nowoczesnym biznesie. W ramach swojej działalności koncentrujemy się na  innowacyjnych i unikalnych rozwiązaniach, które w opłacalny sposób przyczyniają się do zwiększenia wydajności procesów naszych Klientów.</p>
+                        <p><?php echo $opis; ?></p>
                     </div>
                 </div>
                  <div class="wrap-content">
@@ -20,7 +26,7 @@
                     </div>
                     
                     <div class="content">
-                        <p>Wiemy, że w dzisiejszym, tak mocno konkurencyjnym świecie, realne różnice można budować na pozornie niewielkich działaniach. Działaniach, do których niezbędne są dane. Wiarygodne, syntetyczne i pozyskiwane w czasie rzeczywistym. Naszym Klientom pokazujemy jak efektywnie wydobyć je z obszarów działalności, w których dotychczas było to nieopłacalne czy wręcz niemożliwe, a następnie jak przekuć te informacje na realne oszczędności.</p>
+                        <p><?php echo $opis2; ?></p>
                     </div>
                  </div>
             </div>

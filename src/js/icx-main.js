@@ -1,5 +1,5 @@
 (window.load = function (event) {
- const togglerNav = document.querySelector(".toggler-nav");
+  const togglerNav = document.querySelector(".toggler-nav");
   const headerNav = document.querySelector(".header-nav");
   let navFlag = false;
 
@@ -14,6 +14,29 @@
       togglerNav.classList.remove("active");
       document.querySelector("#header").classList.remove("active");
       navFlag = false;
+    }
+  });
+
+  // Go to Top
+  const goToTop = document.querySelector("#go-to-top");
+  goToTop.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  document.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 200) {
+      goToTop.classList.add("go-to-to-active");
+    } else {
+      goToTop.classList.remove("go-to-to-active");
+    }
+  });
+
+  // sticy nabvbar
+  const navbar = document.querySelector("#header");
+  document.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 200) {
+      navbar.classList.add("active");
+    } else {
+      navbar.classList.remove("active");
     }
   });
 })();

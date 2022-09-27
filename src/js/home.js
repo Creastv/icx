@@ -1,3 +1,1 @@
-(window.load = function (event) {
-
-})();
+(window.load = function (event) {})();

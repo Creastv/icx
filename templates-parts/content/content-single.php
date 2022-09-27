@@ -5,7 +5,7 @@
                 <h1 class="entry-title title-page">
                    <?php the_title(); ?>
                 </h1>
-                <div class="meta-group">
+                <!-- <div class="meta-group">
                     <div class="meta meta-category">
                         <span><?php _e(' Kategoria: ', 'icx' ); ?></span>
                         <?php the_category();?>
@@ -16,7 +16,7 @@
                         <span><?php _e('przez:  ', 'icx' ); ?></span>
                         <span class="vcard"> <?php the_author_posts_link(); ?></span>
                     </div> 
-                </div>
+                </div> -->
             </div>
         </div>
     </header>

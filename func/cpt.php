@@ -32,7 +32,7 @@ function icx_post_types() {
 		'publicly_queryable' => true,
 		'show_in_rest' => true,
 		"rewrite"             => array( "slug" => "oferta", "with_front" => true ),
-		'supports'      => array( 'title', 'page-attributes', 'thumbnail' ),
+		'supports'      => array( 'title', 'page-attributes', 'thumbnail', 'editor', 'excerpt' ),
 		// , 'editor' 
 	);
     register_post_type( 'oferta', $args );

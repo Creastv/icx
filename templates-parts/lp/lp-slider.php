@@ -1,11 +1,23 @@
-<section id="" class="slider" style="background-image: url(<?php echo get_template_directory_uri() ?>/src/img/slider.png);">
+<?php 
+$zdj = get_field('zdjecie_hero');
+$title = get_field('tytul_hero');
+$subtitle = get_field('subtytul_hero');
+
+if($zdj){
+     $zd = $zdj;
+    
+} else {
+    $zd = get_template_directory_uri().'/src/img/slider.png';
+}
+?>
+<section id="" class="slider" style="background-image: url(<?php echo $zd; ?>);">
     <div class="container">
         <div class="row">
             <div class="content-wraper">
                 <div class="content">
-                    <h1>Technologie dla Biznesu</h1>
+                    <h1><?php echo $title; ?></h1>
                     <span class="line"></span>
-                    <p>Pomagamy, aby dobrze stało się <span>najlepszym</span></p>
+                    <p><?php echo $subtitle; ?></p>
                 </div>
             </div>
         </div>

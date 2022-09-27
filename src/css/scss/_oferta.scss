@@ -25,6 +25,19 @@ section.oferta {
   }
   .card-oferta {
     padding: 15px;
+    @media #{$sm} {
+      padding: 0px;
+    }
+    &:hover {
+      .content {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+      }
+      .img {
+        img {
+          width: 100% !important;
+        }
+      }
+    }
     header {
       h2 {
         font-size: 24px;
@@ -35,12 +48,16 @@ section.oferta {
         margin: 0;
         padding: 0;
         margin-bottom: 30px;
+        @media #{$sm} {
+          font-size: 21px;
+        }
       }
     }
     .content {
       background-color: #f5f5f5;
       .img {
         img {
+          transition: all 0.3s;
           width: calc(100% - 30px);
           height: auto;
         }

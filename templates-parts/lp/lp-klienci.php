@@ -1,43 +1,32 @@
+<?php
+$title = get_field('tytul_kli');
+?>
+
 <section id="klienci" class="klienci">
     <div class="cintainer">
         <div class="row-flex">
             <div class="col-1 text-center">
                 <div class="title-section">
-                    <h2 class="title">Wybrani klienci</h2>
+                    <h2 class="title"><?php echo $title; ?></h2>
                 </div>
             </div>
         </div>
         <div class="row-flex">
             <div class="col-1">
-                <div class=" swiper carousel">
+                <?php if( have_rows('klienci') ): ?>
+                <div class=" swiper carousel kl">
                     <div class="swiper-wrapper">
+                    <?php while( have_rows('klienci') ): the_row(); 
+                        $image = get_sub_field('logo'); ?>
                         <div class="swiper-slide">
                             <div class="logo">
-                                <img src="<?php echo get_template_directory_uri() ?>/src/img/logo/santander.png" alt="Technologie dla Biznesu">
+                                 <?php echo wp_get_attachment_image( $image, 'full' ); ?>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="logo">
-                                <img src="<?php echo get_template_directory_uri() ?>/src/img/logo/santander.png" alt="Technologie dla Biznesu">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="logo">
-                                <img src="<?php echo get_template_directory_uri() ?>/src/img/logo/santander.png" alt="Technologie dla Biznesu">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="logo">
-                                <img src="<?php echo get_template_directory_uri() ?>/src/img/logo/santander.png" alt="Technologie dla Biznesu">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="logo">
-                                <img src="<?php echo get_template_directory_uri() ?>/src/img/logo/santander.png" alt="Technologie dla Biznesu">
-                            </div>
-                        </div>
+                    <?php endwhile; ?>
                     </div>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

@@ -30,7 +30,9 @@ $args = array(
                     </header>
                     <div class="content">
                         <div class="img">
+                            <a href="<?php the_permalink(); ?>">
                             <?php echo the_post_thumbnail('oferta'); ?>
+                </a>
                         </div>
                        <?php the_excerpt(); ?>
                     </div>

@@ -33,7 +33,7 @@
     loop: true,
     lazy: true,
     autoplay: {
-      delay: 3900,
+      delay: 5900,
       disableOnInteraction: false
     }
   });

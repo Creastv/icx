@@ -108,6 +108,9 @@ section.case-study {
         p {
           font-size: 21px;
           letter-spacing: 2px;
+          @media #{$xlg} {
+            font-size: 18px;
+          }
         }
       }
     }

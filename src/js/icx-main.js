@@ -16,7 +16,16 @@
       navFlag = false;
     }
   });
-
+  // Close after click the navmenu on mobile
+  const itemsNAv = document.querySelectorAll(".header-nav a");
+  for (let i = 0; i < itemsNAv.length; i++) {
+    console.log(itemsNAv[1]);
+    itemsNAv[i].addEventListener("click", () => {
+      headerNav.classList.remove("active");
+      togglerNav.classList.remove("active");
+      navFlag = false;
+    });
+  }
   // Go to Top
   const goToTop = document.querySelector("#go-to-top");
   goToTop.addEventListener("click", () => {

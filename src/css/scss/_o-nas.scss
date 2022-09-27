@@ -1,9 +1,12 @@
 section.o-nas {
   padding: 80px 0;
-  margin-top: -100px;
-  margin-top: -12.5%;
+
+  margin-top: -11.5%;
   position: relative;
   z-index: 2;
+  @media #{$xlg} {
+    margin-top: -10.9%;
+  }
   @media #{$sm} {
     padding: 40px 0;
   }
@@ -89,8 +92,7 @@ section.o-nas {
       p {
         font-size: 21px;
         letter-spacing: 2px;
-
-        @media #{$md} {
+        @media #{$xlg} {
           font-size: 18px;
         }
       }

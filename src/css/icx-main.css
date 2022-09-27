@@ -714,7 +714,7 @@ section.oferta .card-oferta header h2 {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
   section.oferta .card-oferta header h2 {
     font-size: 21px;
   }
@@ -739,6 +739,12 @@ section.oferta .card-oferta .content p {
   letter-spacing: 3px;
 }
 
+@media only screen and (max-width: 1400px) {
+  section.oferta .card-oferta .content p {
+    font-size: 18px;
+  }
+}
+
 section.oferta .card-oferta .cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,10 +761,15 @@ section.oferta .card-oferta .cta a {
 
 section.o-nas {
   padding: 80px 0;
-  margin-top: -100px;
-  margin-top: -12.5%;
+  margin-top: -11.5%;
   position: relative;
   z-index: 2;
+}
+
+@media only screen and (max-width: 1400px) {
+  section.o-nas {
+    margin-top: -10.9%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -874,7 +885,7 @@ section.o-nas .wrap-content .content p {
   letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1400px) {
   section.o-nas .wrap-content .content p {
     font-size: 18px;
   }
@@ -1183,6 +1194,12 @@ section.case-study .case .wrap-case .right {
 section.case-study .case .wrap-case .right p {
   font-size: 21px;
   letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1400px) {
+  section.case-study .case .wrap-case .right p {
+    font-size: 18px;
+  }
 }
 
 .btn {

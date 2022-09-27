@@ -48,7 +48,7 @@ section.oferta {
         margin: 0;
         padding: 0;
         margin-bottom: 30px;
-        @media #{$sm} {
+        @media #{$xlg} {
           font-size: 21px;
         }
       }
@@ -68,6 +68,9 @@ section.oferta {
         margin: 0;
         font-size: 21px;
         letter-spacing: 3px;
+        @media #{$xlg} {
+          font-size: 18px;
+        }
       }
     }
     .cta {

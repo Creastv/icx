@@ -49,6 +49,16 @@ section.o-nas {
       }
     }
   }
+  .col-2 {
+    .wrap-content {
+      &:nth-child(3) {
+        width: 120%;
+        @media #{$sm} {
+          width: 100%;
+        }
+      }
+    }
+  }
   .wrap-content {
     margin-bottom: 30px;
     display: flex;

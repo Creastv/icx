@@ -3,9 +3,8 @@ $title = get_field('tytul_kli');
 ?>
 
 <section id="klienci" class="klienci">
-    <div class="cintainer">
         <div class="row-flex">
-            <div class="col-1 text-center">
+            <div class="col-1 text-center ornament">
                 <div class="title-section">
                     <h2 class="title"><?php echo $title; ?></h2>
                 </div>
@@ -29,5 +28,4 @@ $title = get_field('tytul_kli');
                 <?php endif; ?>
             </div>
         </div>
-    </div>
 </section>

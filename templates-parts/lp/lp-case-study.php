@@ -5,7 +5,7 @@ $title = get_field('tytul_cs');
 <section id="case-study" class="case-study">
  <div class="container">
     <div class="row row-flex">
-        <div class="col-1">
+        <div class="col-1 ornament">
             <div class="title-section">
                 <h2 class="title"><?php echo $title; ?></h2>
             </div>

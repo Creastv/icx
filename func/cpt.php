@@ -24,7 +24,6 @@ function icx_post_types() {
 		'has_archive' => false,
 		'show_in_rest' => true,
 		'hierarchical'      => true,
-		'menu_icon'     => get_template_directory_uri().'/src/img/admin-crown.png',
 		'labels'            => $labels,
 		'show_ui'           => true,
 		'show_admin_column' => true,

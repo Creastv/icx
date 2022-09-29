@@ -86,6 +86,14 @@
             padding: 15px 15px;
           }
         }
+        a.active,
+        a:visited {
+          color: $main2 !important;
+        }
+        a:focus,
+        a:focus-visible {
+          color: $main2 !important;
+        }
       }
     }
   }

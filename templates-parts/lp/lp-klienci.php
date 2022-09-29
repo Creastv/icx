@@ -2,7 +2,7 @@
 $title = get_field('tytul_kli');
 ?>
 
-<section id="klienci" class="klienci">
+<section id="klienci" class="klienci" data-aos="fade-right" data-aos-duration="1000">
         <div class="row-flex">
             <div class="col-1 text-center ornament">
                 <div class="title-section">

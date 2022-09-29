@@ -3,7 +3,7 @@ section.slider {
   height: 110vh;
   min-height: 750px;
   background-color: #004e9d;
-  background-size: cover;
+
   background-position: center 150%;
   background-repeat: no-repeat;
   position: relative;
@@ -11,7 +11,9 @@ section.slider {
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
-
+  @media #{$lg} {
+    background-size: cover !important;
+  }
   @media #{$sm} {
     height: 70vh;
     background-position: 58% center;
@@ -76,11 +78,24 @@ section.slider {
       }
     }
   }
+
+  .ani {
+    transform: translateX(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  .ani.run {
+    transform: translateX(0%);
+    transition: all 0.3s;
+    opacity: 1;
+  }
   .bg-slider {
     position: absolute;
     z-index: -1;
     width: 100%;
-    bottom: 80px;
+    top: -130px;
+    height: 130vh;
+    object-fit: cover;
   }
   .border {
     width: 100%;

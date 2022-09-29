@@ -35,5 +35,31 @@
 </footer>
 <span id="go-to-top" ></span>
 <?php wp_footer(); ?>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+document.querySelector('.bg-slider').style.top = -130 + 'px' ;
+window.addEventListener('scroll', () => {  
+  let scrollTop = document.documentElement.scrollTop;
+  document.querySelector('.bg-slider').style.top = -130 - scrollTop / 2 + 'px';
+  document.querySelector('.bg-slider').style.height = 130 + scrollTop / 10 + 'vh';
+});
+
+// for (let li of menuLis) {
+//     li.classList.remove("active");
+//     console.log("class removed");
+// }
+
+setTimeout(myAni, 700);
+function myAni() {
+  const ani =  document.querySelectorAll('.ani')
+  for (let an of ani) {   
+        an.classList.add('run')
+    }
+}
+
+</script>
+
 </body>
 </html>

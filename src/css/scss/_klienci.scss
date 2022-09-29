@@ -1,9 +1,14 @@
 section.klienci {
-  padding: 80px 0;
-  margin-top: -80px;
+  // padding: 80px 0;
+  padding: 80px 0 0;
+  // margin-top: -11.5px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 27;
   @media #{$sm} {
+    margin-top: 0px;
+    margin-bottom: 0;
     padding: 40px 0;
-    margin-top: -40px;
   }
   .swiper-wrapper {
     align-items: center;
@@ -15,7 +20,7 @@ section.klienci {
   }
   .ornament {
     &:before {
-      content: "";
+      // content: "";
       display: block;
       position: relative;
       z-index: 9;
@@ -39,7 +44,7 @@ section.klienci {
   }
   .title-section {
     .title {
-      font-size: 43px;
+      // font-size: 43px;
     }
   }
   .carousel {

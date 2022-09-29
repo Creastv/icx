@@ -2,7 +2,7 @@
 $title = get_field('tytul_cs');
 ?>
 
-<section id="case-study" class="case-study">
+<section id="case-study" class="case-study" data-aos="fade-right" data-aos-duration="1000">
  <div class="container">
     <div class="row row-flex">
         <div class="col-1 ornament">

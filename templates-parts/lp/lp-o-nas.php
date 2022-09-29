@@ -4,7 +4,7 @@ $opis = get_field('opis_onas');
 $opis2= get_field('opis2_onas');
 ?>
 
-<section id="o-nas" class="o-nas">
+<section id="o-nas" class="o-nas" data-aos="fade-right" data-aos-duration="1000">
     <div class="conteiner">
         <div class="row row-flex">
             <div class="col-2">

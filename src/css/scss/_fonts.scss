@@ -38,3 +38,23 @@
     font-display: swap;
 }
 
+
+@font-face {
+    font-family: 'URW DIN Light';
+    src: url('../fonts/URWDIN-Light.woff2') format('woff2'),
+        url('../fonts/URWDIN-Light.woff') format('woff'),
+        url('../fonts/URWDIN-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'URW DIN regular';
+    src: url('../fonts/URWDIN-Regular.woff2') format('woff2'),
+        url('../fonts/URWDIN-Regular.woff') format('woff'),
+        url('../fonts/URWDIN-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

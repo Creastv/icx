@@ -4,7 +4,7 @@ section.slider {
   min-height: 750px;
   background-color: #004e9d;
 
-  background-position: center 150%;
+  background-position: center 130%;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
@@ -36,7 +36,7 @@ section.slider {
       }
       h1 {
         font-size: 80px;
-        font-size: 6.2vw;
+        font-size: 5.2vw;
         line-height: 81px;
         line-height: 5vw;
         color: #fff;
@@ -60,6 +60,8 @@ section.slider {
         height: 5px;
       }
       p {
+        font-family: 'URW DIN light';
+
         font-size: 41px;
         font-size: 2vw;
         color: #fff;

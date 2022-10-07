@@ -30,6 +30,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'URW DIN Light';
+  src: url("../fonts/URWDIN-Light.woff2") format("woff2"), url("../fonts/URWDIN-Light.woff") format("woff"), url("../fonts/URWDIN-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'URW DIN regular';
+  src: url("../fonts/URWDIN-Regular.woff2") format("woff2"), url("../fonts/URWDIN-Regular.woff") format("woff"), url("../fonts/URWDIN-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 a {
   color: #004e9d;
 }
@@ -40,6 +56,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Futura PT";
   font-weight: 900;
 }
 
@@ -129,8 +146,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: "Futura PT";
-  font-weight: 500;
+  font-family: 'URW DIN regular';
+  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -1070,7 +1087,7 @@ section.slider {
   height: 110vh;
   min-height: 750px;
   background-color: #004e9d;
-  background-position: center 150%;
+  background-position: center 130%;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
@@ -1124,7 +1141,7 @@ section.slider .content-wraper .content {
 
 section.slider .content-wraper .content h1 {
   font-size: 80px;
-  font-size: 6.2vw;
+  font-size: 5.2vw;
   line-height: 81px;
   line-height: 5vw;
   color: #fff;
@@ -1156,6 +1173,7 @@ section.slider .content-wraper .content .line {
 }
 
 section.slider .content-wraper .content p {
+  font-family: 'URW DIN light';
   font-size: 41px;
   font-size: 2vw;
   color: #fff;

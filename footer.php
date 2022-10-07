@@ -39,13 +39,6 @@
 <script>
   AOS.init();
 
-document.querySelector('.bg-slider').style.top = -130 + 'px' ;
-window.addEventListener('scroll', () => {  
-  let scrollTop = document.documentElement.scrollTop;
-  document.querySelector('.bg-slider').style.top = -130 - scrollTop / 2 + 'px';
-  document.querySelector('.bg-slider').style.height = 130 + scrollTop / 10 + 'vh';
-});
-
 // for (let li of menuLis) {
 //     li.classList.remove("active");
 //     console.log("class removed");

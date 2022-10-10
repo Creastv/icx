@@ -3,7 +3,6 @@ section.slider {
   height: 110vh;
   min-height: 750px;
   background-color: #004e9d;
-
   background-position: center 130%;
   background-repeat: no-repeat;
   position: relative;
@@ -30,10 +29,10 @@ section.slider {
       padding-left: 0;
     }
     .content {
-      width: 50%;
-      @media #{$sm} {
-        width: 100%;
-      }
+      // // width: 50%;
+      // @media #{$sm} {
+      //   width: 100%;
+      // }
       h1 {
         font-size: 80px;
         font-size: 5.2vw;
@@ -66,9 +65,9 @@ section.slider {
         font-size: 2vw;
         color: #fff;
         @media #{$xlg} {
-          font-size: 41px !important;
-          font-size: 3vw;
-          line-height: 4vw;
+          font-size: 31px;
+          font-size: 2.5vw;
+          line-height: 3.5vw;
         }
         @media #{$sm} {
           font-size: 31px !important;
@@ -99,10 +98,5 @@ section.slider {
     height: 130vh;
     object-fit: cover;
   }
-  .border {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: -5px;
-  }
+ 
 }

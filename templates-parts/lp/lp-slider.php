@@ -24,9 +24,6 @@ if($zdj){
     </div>
     <!-- <div class="bg" style="background-image: url(<?php echo $zd; ?>);"></div> -->
     <!-- <img class="bg-slider" src="<?php echo get_template_directory_uri() ?>/src/img/slider.png" alt="Technologie dla Biznesu"> -->
-    <svg class="border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="963px"
-        height="97.5px" viewBox="0 0 963 97.5" style="enable-background:new 0 0 963 97.5;" xml:space="preserve">
-    <polygon fill='#FFFFFF' points="0,0.5 100,0.5 100,76.5 176.5,0 963,0 963,97.5 0,97.5 "/>
-    </svg>
+    
     
 </section>

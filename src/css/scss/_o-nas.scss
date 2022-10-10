@@ -1,15 +1,9 @@
 section.o-nas {
   padding: 80px 0;
-  // padding-bottom: 80px;
-  // margin-top: -11.5%;
-  margin-top: -100px;
-  // margin-top: -250px;
+  margin-top: -180px;
   position: relative;
   z-index: 2;
-
   @media #{$md} {
-    // margin-bottom: 0px;
-    // padding-bottom: 0;
     margin-top: -50px;
   }
   .conteiner {
@@ -33,13 +27,12 @@ section.o-nas {
       content: "";
       position: absolute;
       z-index: -2;
-      top: 10%;
+      top: 76px;
       width: 100%;
       height: 100%;
       background-image: url(../img/dots.png);
       transition: all 2s;
-      animation: float3 15s linear infinite alternate;
-      right: -50%;
+      right: -47%;
       @media #{$sm} {
         right: 0;
         height: 20%;
@@ -56,7 +49,8 @@ section.o-nas {
   .col-2 {
     .wrap-content {
       &:nth-child(3) {
-        width: 120%;
+        margin-top: 20px;
+        width: 110%;
         @media #{$sm} {
           width: 100%;
         }
@@ -64,7 +58,6 @@ section.o-nas {
     }
   }
   .wrap-content {
-    margin-bottom: 30px;
     display: flex;
     @media #{$sm} {
       margin-bottom: 0;
@@ -73,15 +66,15 @@ section.o-nas {
       //   padding-left: 200px;
     }
     .space {
-      width: 24%;
+      width: 29%;
       @media #{$sm} {
         width: 0px;
       }
     }
     .arrow {
       position: relative;
-      top: 17%;
-      left: 18%;
+      top: 12%;
+      left: 22%;
       width: 0;
       height: 0;
       border-top: 50px solid transparent;
@@ -104,8 +97,9 @@ section.o-nas {
     .content {
       width: 100%;
       p {
-        font-size: 21px;
-        letter-spacing: 2px;
+          font-size: 23px;
+          letter-spacing: 2px;
+          line-height: 35px;
         @media #{$xlg} {
           font-size: 18px;
         }
@@ -114,9 +108,12 @@ section.o-nas {
   }
   .img-o-nas {
     width: 100%;
-    transform: translate(20%, 10%);
-    right: 30px;
+    transform: translate(20%, 7%);
+    right: 0;
     position: relative;
+    max-width: 641px;
+    margin: 0 auto;
+    display: block;
     @media #{$sm} {
       transform: translate(0%, 0%);
       width: 80%;
@@ -125,3 +122,13 @@ section.o-nas {
     }
   }
 }
+ .border {
+    position: relative;
+    z-index: -3;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+  }

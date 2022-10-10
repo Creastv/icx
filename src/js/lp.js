@@ -9,7 +9,6 @@
       delay: 3900,
       disableOnInteraction: false
     },
-
     breakpoints: {
       778: {
         slidesPerView: 3
@@ -37,4 +36,9 @@
       disableOnInteraction: false
     }
   });
+
+
 })();
+
+// const border = document.querySelector('svg.border').clientHeight;
+// console.log(border)

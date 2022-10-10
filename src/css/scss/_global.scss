@@ -31,7 +31,7 @@ body {
 }
 
 .row {
-  padding: 0 60px;
+  padding: 0 50px;
   @media #{$md} {
     padding: 15px;
   }
@@ -112,32 +112,4 @@ body {
 .go-to-to-active {
   -webkit-transform: translate(-10px, -50%) !important;
   transform: translate(-10px, -50%) !important;
-}
-
-@keyframes float3 {
-  0% {
-    transform: translatey(0px);
-  }
-  25% {
-    transform: translate(-40px, -45px);
-  }
-  50% {
-    transform: translate(0px, -70px);
-  }
-  75% {
-    transform: translate(-30px, -45px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    transform: translateY(20px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
 }

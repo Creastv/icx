@@ -1028,6 +1028,7 @@ section.slider {
   background-color: #004e9d;
   background-position: center 130%;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 2;
   width: 100vw;

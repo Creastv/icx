@@ -77,7 +77,10 @@
       padding-left: 0px;
      }
     .title {
-      font-size: 51px;
+      font-size: 48px;
+      @media #{$sm} {
+        font-size: 41px;
+      }
     }
   }
 }

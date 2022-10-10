@@ -37,7 +37,7 @@
 <?php wp_footer(); ?>
 <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <script>
-  AOS.init();
+//   AOS.init();
 
 // for (let li of menuLis) {
 //     li.classList.remove("active");

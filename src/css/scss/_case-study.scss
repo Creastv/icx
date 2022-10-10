@@ -1,8 +1,6 @@
 section.case-study {
   padding: 80px 0 0;
-  //  margin-top: -11.5px;
   position: relative;
-
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
@@ -10,6 +8,7 @@ section.case-study {
     padding: 40px 0;
   }
   .title-section {
+    margin-bottom: 8px;
     @media #{$sm} {
       text-align: center;
     }
@@ -18,9 +17,9 @@ section.case-study {
     content: "";
     position: absolute;
     z-index: -2;
-    bottom: 0;
+    bottom: 80px;
     width: 100%;
-    height: 50%;
+    height: 40%;
     background-image: url(../img/dots.png);
   }
   .container {
@@ -32,7 +31,7 @@ section.case-study {
       top: 0%;
       right: 60px;
       width: calc(100% - 60px);
-      height: 125%;
+      height: 100%;
       background-color: #f5f5f5;
       clip-path: polygon(26% 0, 100% 0, 100% 100%, 100% 100%);
       @media #{$md} {
@@ -76,20 +75,21 @@ section.case-study {
     .wrap-case {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      // align-items: center;
       .header {
         text-align: left;
-        width: calc(100% + 30%);
-        transform: translateX(-30%);
+        width: calc(100% + 48%);
+        transform: translateX(-20%);
         position: relative;
         right: 0;
+        margin-bottom: 56px;
         @media #{$md} {
           width: 100%;
           transform: translateX(0);
         }
 
         h3 {
-          font-size: 24px;
+          font-size: 31px;
           font-weight: 900;
           text-transform: uppercase;
           letter-spacing: 3px;
@@ -100,7 +100,7 @@ section.case-study {
         }
       }
       .left {
-        width: 60%;
+        width: 57%;
         padding: 0 30px;
         @media #{$xlg} {
           width: 50%;
@@ -113,30 +113,43 @@ section.case-study {
         img {
           width: 100%;
           height: auto;
+          margin-top: 100px;
+           @media #{$md} {
+               height: auto;
+              max-width: 50%;
+              margin-bottom: 50px;
+              margin-top: 0px;
+           }
           @media #{$sm} {
-            width: 80%;
-            margin: 0 auto;
-            display: block;
+            margin-bottom: 20px;
+            max-width: 60%;
           }
         }
       }
       .right {
         padding: 40px;
         width: 40%;
+        padding-bottom: 200px;
         @media #{$xlg} {
           width: 50%;
         }
         @media #{$md} {
+          padding-bottom: 0px;
+          margin-bottom: 0;
           order: 2;
           padding: 0;
           width: 100%;
         }
         p {
-          font-size: 21px;
+           font-size: 21px;
           letter-spacing: 2px;
+          line-height: 35px;
           @media #{$xlg} {
             font-size: 18px;
           }
+        }
+        .btn{
+          margin-top: 50px;
         }
       }
     }

@@ -16,22 +16,22 @@
 }
 
 #header.active {
-  padding: 10px 0;
+  // padding: 10px 0;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
-  @media #{$sm} {
-    padding: 0;
-  }
-  .nav-brand {
-    svg {
-      width: 65px;
-      height: 35px;
-    }
-  }
-  .header-nav ul li a {
-    padding: 10px 15px;
-    display: block;
-    font-size: 16px;
-  }
+  // @media #{$sm} {
+  //   padding: 0;
+  // }
+  // .nav-brand {
+  //   svg {
+  //     width: 65px;
+  //     height: 35px;
+  //   }
+  // }
+  // .header-nav ul li a {
+  //   padding: 10px 15px;
+  //   display: block;
+  //   font-size: 16px;
+  // }
 }
 
 .navbar {

@@ -45,7 +45,6 @@
     setMarginSection();
    
     window.addEventListener('resize', setMarginSection);
-
 </script>
 </body>
 </html>

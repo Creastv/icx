@@ -1,5 +1,8 @@
 #kontakt {
-  padding-top: 80px;
+  margin-top: -107px;
+       @media #{$md} {
+        margin-top: 0px;
+       }
 }
 #footer {
   position: relative;
@@ -68,4 +71,13 @@
   // padding-top: 80px;
   // margin-top: -100px;
   // margin-top: -50px;
+  .title-section {
+    padding-left: 50px;
+     @media #{$md} {
+      padding-left: 0px;
+     }
+    .title {
+      font-size: 51px;
+    }
+  }
 }

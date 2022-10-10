@@ -1,6 +1,6 @@
 section.klienci {
   // padding: 80px 0;
-  padding: 80px 0 0;
+  padding: 80px 0 40px;
   // margin-top: -11.5px;
   margin-bottom: 0px;
   position: relative;
@@ -44,7 +44,7 @@ section.klienci {
   }
   .title-section {
     .title {
-      // font-size: 43px;
+      font-size: 51px;
     }
   }
   .carousel {
@@ -58,6 +58,26 @@ section.klienci {
         &:hover {
           filter: grayscale(0);
         }
+      }
+    }
+  }
+}
+
+
+// v_2
+
+#klienci{
+  .wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    .logo{
+      // max-width: 210px;
+      // height: auto;
+      img{
+        width: 100%;
+        height: auto;
       }
     }
   }

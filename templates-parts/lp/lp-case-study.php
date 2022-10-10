@@ -14,8 +14,6 @@ $title = get_field('tytul_cs');
     <div class="row row-flex">
         <div class="col-1">
             <?php if( have_rows('case_study') ): ?>
-            <div class="swiper carousel cs ">
-                <div class="swiper-wrapper">
                 <?php while( have_rows('case_study') ): the_row(); 
                 $image = get_sub_field('grafika');
                 $tyt = get_sub_field('tutul');
@@ -40,8 +38,6 @@ $title = get_field('tytul_cs');
                         </div>
                     </div>
                  <?php endwhile; ?>
-                </div>
-            </div>
             <?php endif; ?>
         </div>
     </div>

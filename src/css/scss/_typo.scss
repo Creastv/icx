@@ -9,6 +9,7 @@ h5,
 h6 {
   font-family: "Futura PT";
   font-weight: 900;
+  font-weight: bold;
 }
 p {
   font-size: 18px;
@@ -31,12 +32,12 @@ p {
 
 .title-section {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   @media #{$sm} {
     margin-bottom: 30px;
   }
   .title {
-    font-size: 75px;
+    font-size: 81px;
     color: $main2;
     margin: 0;
     padding: 0;
@@ -48,12 +49,13 @@ p {
       content: "";
       background-image: url(../img/arrow.png);
       background-size: contain;
+      background-repeat: no-repeat;
       display: block;
-      width: 38px;
+      width: 32px;
       height: 21px;
       position: absolute;
-      top: 45%;
-      right: -100px;
+      top: 47%;
+      right: -80px;
       @media #{$sm} {
         width: 23px;
         height: 13px;

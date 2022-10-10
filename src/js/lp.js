@@ -39,6 +39,3 @@
 
 
 })();
-
-// const border = document.querySelector('svg.border').clientHeight;
-// console.log(border)

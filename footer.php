@@ -35,24 +35,17 @@
 </footer>
 <span id="go-to-top" ></span>
 <?php wp_footer(); ?>
-<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <script>
-//   AOS.init();
-
-// for (let li of menuLis) {
-//     li.classList.remove("active");
-//     console.log("class removed");
-// }
-
-setTimeout(myAni, 700);
-function myAni() {
-  const ani =  document.querySelectorAll('.ani')
-  for (let an of ani) {   
-        an.classList.add('run')
+    const setMarginSection = function(){
+        const border = document.querySelector('svg.border').clientHeight;
+        const onas = document.querySelector('.o-nas');
+        onas.style.marginTop = - border+ 'px';
+        console.log(border)
     }
-}
+    setMarginSection();
+   
+    window.addEventListener('resize', setMarginSection);
 
 </script>
-
 </body>
 </html>

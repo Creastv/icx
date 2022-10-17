@@ -68,15 +68,46 @@
         @media #{$sm} {
           width: 100%;
         }
+        &:first-child{
+          a{
+            padding-left: 0;
+          }
+        }
+         &:last-child{
+          a{
+            padding-right: 0;
+          }
+        }
         a {
+          font-family: 'Futura PT';
           transition: all 0.3s;
-          padding: 10px 25px;
+          padding: 0px 43px;
           display: block;
-          font-size: 22px;
+          font-size: 25px;
+          letter-spacing: 2px;
           text-transform: uppercase;
           text-decoration: none;
+          position: relative;
+          span{
+            position: relative;
+            &:before{
+              content:"";
+              display: block;
+              width: 0%;
+              height: 3px;
+              position: absolute;
+              background-color: $main;
+              bottom:-13px;
+              left:-20%;
+              transition: all 0.3s;
+            }
+          }
+           @media #{$lg} {
+            padding: 10px 30px;
+            font-size: 18px;
+          }
           @media #{$md} {
-            padding: 10px;
+            padding: 10px!important;
             font-size: 18px;
           }
           @media #{$sm} {
@@ -86,14 +117,18 @@
             padding: 15px 15px;
           }
         }
-        a.active,
-        a:visited {
+        a:hover {
+          // color: $main2 !important;
+          span{
+            &:before{
+              width: 140%;
+            }
+          }
+        }
+        a.active {
           color: $main2 !important;
         }
-        a:focus,
-        a:focus-visible {
-          color: $main2 !important;
-        }
+       
       }
     }
   }

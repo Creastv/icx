@@ -1,10 +1,10 @@
 section.o-nas {
-  padding: 80px 0 30px;
-  margin-top: -180px;
+  padding: 84px 0 40px;
+  // margin-top: -180px;
   position: relative;
   z-index: 2;
   @media #{$md} {
-    margin-top: -50px;
+    margin-top: 0px;
   }
   .conteiner {
     &:before {
@@ -18,10 +18,13 @@ section.o-nas {
       background-color: #f5f5f5;
       clip-path: polygon(68% 0, 100% 0, 100% 100%, 0% 100%);
       @media #{$sm} {
-        top: 2%;
+        top: 0%;
         right: -30px;
         height: 50%;
         clip-path: polygon(28% 0, 100% 0, 100% 100%, 100% 100%);
+      }
+      @media #{$xs} {
+        top:0px
       }
     }
     &:after {
@@ -70,19 +73,19 @@ section.o-nas {
       //   padding-left: 200px;
     }
     .space {
-      width: 29%;
+      width: 31%;
       @media #{$sm} {
         width: 0px;
       }
     }
     .arrow {
       position: relative;
-      top: 12%;
-      left: 22%;
+      top: 11%;
+      left: 31%;
       width: 0;
       height: 0;
       border-top: 50px solid transparent;
-      border-left: 46px solid $main2;
+      border-left: 50px solid $main2;
       border-bottom: 47px solid transparent;
       display: block;
       @media #{$sm} {
@@ -112,10 +115,10 @@ section.o-nas {
   }
   .img-o-nas {
     width: 100%;
-    transform: translate(20%, 7%);
+    transform: translate(22%, 6%);
     right: 0;
     position: relative;
-    max-width: 641px;
+    max-width: 663px;
     margin: 0 auto;
     display: block;
       @media #{$md} {

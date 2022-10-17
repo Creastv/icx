@@ -90,6 +90,7 @@ p {
 
 .title-section .title {
   font-size: 81px;
+  letter-spacing: -1px;
   color: #7a6dc7;
   margin: 0;
   padding: 0;
@@ -111,7 +112,7 @@ p {
   width: 32px;
   height: 21px;
   position: absolute;
-  top: 47%;
+  top: 48%;
   right: -80px;
 }
 
@@ -141,7 +142,6 @@ body {
   padding: 0;
   background-color: #fff;
   font-family: 'URW DIN regular';
-  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -500,19 +500,54 @@ body {
   }
 }
 
+.navbar .header-nav ul li:first-child a {
+  padding-left: 0;
+}
+
+.navbar .header-nav ul li:last-child a {
+  padding-right: 0;
+}
+
 .navbar .header-nav ul li a {
+  font-family: 'Futura PT';
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 10px 25px;
+  padding: 0px 43px;
   display: block;
-  font-size: 22px;
+  font-size: 25px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+}
+
+.navbar .header-nav ul li a span {
+  position: relative;
+}
+
+.navbar .header-nav ul li a span:before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: #004e9d;
+  bottom: -13px;
+  left: -20%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar .header-nav ul li a {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 998px) {
   .navbar .header-nav ul li a {
-    padding: 10px;
+    padding: 10px !important;
     font-size: 18px;
   }
 }
@@ -526,13 +561,11 @@ body {
   }
 }
 
-.navbar .header-nav ul li a.active,
-.navbar .header-nav ul li a:visited {
-  color: #7a6dc7 !important;
+.navbar .header-nav ul li a:hover span:before {
+  width: 140%;
 }
 
-.navbar .header-nav ul li a:focus,
-.navbar .header-nav ul li a:focus-visible {
+.navbar .header-nav ul li a.active {
   color: #7a6dc7 !important;
 }
 
@@ -650,7 +683,7 @@ body {
 }
 
 section.klienci {
-  padding: 80px 0 40px;
+  padding: 115px 0 80px;
   margin-bottom: 0px;
   position: relative;
   z-index: 27;
@@ -674,6 +707,10 @@ section.klienci .swiper-wrapper {
   section.klienci .col-1 {
     text-align: left !important;
   }
+}
+
+section.klienci .ornament {
+  position: relative;
 }
 
 section.klienci .ornament:before {
@@ -702,6 +739,10 @@ section.klienci .ornament:before {
   }
 }
 
+section.klienci .title-section {
+  margin-bottom: 0;
+}
+
 section.klienci .title-section .title {
   font-size: 48px;
 }
@@ -727,6 +768,44 @@ section.klienci .carousel .logo img:hover {
           filter: grayscale(0);
 }
 
+#klienci .ornament {
+  margin-bottom: 42px;
+  position: relative;
+}
+
+#klienci .ornament:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 46px solid #7a6dc7;
+  border-bottom: 47px solid transparent;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  #klienci .ornament:before {
+    top: 10%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 26px solid #7a6dc7;
+    border-bottom: 20px solid transparent;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #klienci .ornament:before {
+    display: none;
+  }
+}
+
 #klienci .wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,30 +829,25 @@ section.klienci .carousel .logo img:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #klienci .wraper .logo {
-    width: 50%;
-    padding: 10px;
-  }
-}
-
 #klienci .wraper .logo img {
   width: 100%;
   height: auto;
+  padding: 15px 30px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
-@media only screen and (max-width: 768px) {
-  #klienci .wraper .logo img {
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
-  }
+#klienci .wraper .logo img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 section.oferta {
   position: relative;
   z-index: 4;
-  padding: 80px 0 40px;
+  padding: 40px 0 40px;
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
@@ -843,7 +917,7 @@ section.oferta .card-oferta header h2 {
   letter-spacing: 2px;
   color: #004e9d;
   margin: 0;
-  padding: 30px;
+  padding: 30px 0;
   background-color: #fff;
 }
 
@@ -909,15 +983,14 @@ section.oferta .card-oferta .cta a span {
 }
 
 section.o-nas {
-  padding: 80px 0 30px;
-  margin-top: -180px;
+  padding: 84px 0 40px;
   position: relative;
   z-index: 2;
 }
 
 @media only screen and (max-width: 998px) {
   section.o-nas {
-    margin-top: -50px;
+    margin-top: 0px;
   }
 }
 
@@ -936,11 +1009,17 @@ section.o-nas .conteiner:before {
 
 @media only screen and (max-width: 768px) {
   section.o-nas .conteiner:before {
-    top: 2%;
+    top: 0%;
     right: -30px;
     height: 50%;
     -webkit-clip-path: polygon(28% 0, 100% 0, 100% 100%, 100% 100%);
             clip-path: polygon(28% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  section.o-nas .conteiner:before {
+    top: 0px;
   }
 }
 
@@ -1002,7 +1081,7 @@ section.o-nas .wrap-content {
 }
 
 section.o-nas .wrap-content .space {
-  width: 29%;
+  width: 31%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1013,12 +1092,12 @@ section.o-nas .wrap-content .space {
 
 section.o-nas .wrap-content .arrow {
   position: relative;
-  top: 12%;
-  left: 22%;
+  top: 11%;
+  left: 31%;
   width: 0;
   height: 0;
   border-top: 50px solid transparent;
-  border-left: 46px solid #7a6dc7;
+  border-left: 50px solid #7a6dc7;
   border-bottom: 47px solid transparent;
   display: block;
 }
@@ -1056,11 +1135,11 @@ section.o-nas .wrap-content .content p {
 
 section.o-nas .img-o-nas {
   width: 100%;
-  -webkit-transform: translate(20%, 7%);
-          transform: translate(20%, 7%);
+  -webkit-transform: translate(22%, 6%);
+          transform: translate(22%, 6%);
   right: 0;
   position: relative;
-  max-width: 641px;
+  max-width: 663px;
   margin: 0 auto;
   display: block;
 }
@@ -1093,11 +1172,10 @@ section.o-nas .img-o-nas {
 }
 
 section.slider {
-  overflow: hidden;
-  height: 110vh;
+  height: 108vh;
   min-height: 750px;
   background-color: #004e9d;
-  background-position: center 130%;
+  background-position: center 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1120,12 +1198,36 @@ section.slider {
   }
 }
 
+section.slider .tringle {
+  position: absolute;
+  max-width: 70%;
+  top: 18%;
+}
+
+@media only screen and (max-width: 998px) {
+  section.slider .tringle {
+    top: 160px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  section.slider .tringle {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    top: 11%;
+    left: 0;
+  }
+}
+
 section.slider .content-wraper {
   position: absolute;
   top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   padding-left: 60px;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1140,15 +1242,21 @@ section.slider .content-wraper {
   }
 }
 
+section.slider .content-wraper .content {
+  z-index: 2;
+  position: relative;
+}
+
 section.slider .content-wraper .content h1 {
   font-size: 80px;
-  font-size: 5.2vw;
+  font-size: 4.3vw;
   line-height: 81px;
-  line-height: 5vw;
+  line-height: 4.3vw;
   color: #fff;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
+  padding-top: 48px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1168,15 +1276,17 @@ section.slider .content-wraper .content h1 {
 
 section.slider .content-wraper .content .line {
   display: block;
-  width: 200px;
+  width: 217px;
   background-color: #00f6ff;
   height: 5px;
 }
 
 section.slider .content-wraper .content p {
   font-family: 'URW DIN light';
+  margin-top: 55px;
   font-size: 41px;
   font-size: 2vw;
+  letter-spacing: 1px;
   color: #fff;
 }
 
@@ -1197,6 +1307,8 @@ section.slider .content-wraper .content p {
 
 section.slider .content-wraper .content p span {
   color: #00f6ff;
+  font-family: 'URW DIN regular';
+  font-weight: bold;
 }
 
 section.slider .ani {
@@ -1223,6 +1335,13 @@ section.slider .bg-slider {
   height: 130vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media only screen and (max-height: 840px) {
+  .tringle {
+    height: 100%;
+    width: initial;
+  }
 }
 
 section.case-study {

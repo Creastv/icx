@@ -38,6 +38,7 @@ p {
   }
   .title {
     font-size: 81px;
+    letter-spacing: -1px;
     color: $main2;
     margin: 0;
     padding: 0;
@@ -54,7 +55,7 @@ p {
       width: 32px;
       height: 21px;
       position: absolute;
-      top: 47%;
+      top: 48%;
       right: -80px;
       @media #{$sm} {
         width: 23px;

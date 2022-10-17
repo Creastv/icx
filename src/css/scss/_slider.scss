@@ -1,9 +1,9 @@
 section.slider {
-  overflow: hidden;
-  height: 110vh;
+  // overflow: hidden;
+  height: 108vh;
   min-height: 750px;
   background-color: #004e9d;
-  background-position: center 130%;
+  background-position: center 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -18,31 +18,48 @@ section.slider {
     height: 70vh;
     background-position: 58% center;
   }
+   .tringle{
+      position: absolute;
+      max-width: 70%;
+       top: 18%;
+        @media #{$md} {
+          top: 160px;
+          height: auto;
+        }
+       @media #{$md} {
+        max-width: 100%;
+        width: 80%;
+        height: auto;
+        top:11%;
+        left: 0;
+       }
+    }
   .content-wraper {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
     padding-left: 60px;
+    z-index: 2;
     @media #{$sm} {
       padding-left: 30px;
     }
     @media #{$xs} {
       padding-left: 0;
     }
+   
     .content {
-      // // width: 50%;
-      // @media #{$sm} {
-      //   width: 100%;
-      // }
+     z-index: 2;
+     position: relative;
       h1 {
         font-size: 80px;
-        font-size: 5.2vw;
+        font-size: 4.3vw;
         line-height: 81px;
-        line-height: 5vw;
+        line-height: 4.3vw;
         color: #fff;
         margin: 0;
         padding: 0;
         margin-bottom: 25px;
+        padding-top: 48px;
         @media #{$lg} {
           font-size: 80px;
           font-size: 7vw;
@@ -55,15 +72,16 @@ section.slider {
       }
       .line {
         display: block;
-        width: 200px;
+        width: 217px;
         background-color: $main3;
         height: 5px;
       }
       p {
         font-family: 'URW DIN light';
-
+        margin-top: 55px;
         font-size: 41px;
         font-size: 2vw;
+        letter-spacing: 1px;
         color: #fff;
         @media #{$xlg} {
           font-size: 31px;
@@ -76,6 +94,8 @@ section.slider {
         }
         span {
           color: $main3;
+          font-family: 'URW DIN regular';
+          font-weight: bold;
         }
       }
     }
@@ -100,4 +120,13 @@ section.slider {
     object-fit: cover;
   }
  
+}
+
+
+
+@media only screen and (max-height: 840px){
+.tringle{
+  height: 100%;
+  width: initial;
+}
 }

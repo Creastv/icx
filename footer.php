@@ -35,16 +35,5 @@
 </footer>
 <span id="go-to-top" ></span>
 <?php wp_footer(); ?>
-<script>
-    const setMarginSection = function(){
-        const border = document.querySelector('svg.border').clientHeight;
-        const onas = document.querySelector('.o-nas');
-        onas.style.marginTop = - border+ 'px';
-        console.log(border)
-    }
-    setMarginSection();
-   
-    window.addEventListener('resize', setMarginSection);
-</script>
 </body>
 </html>

@@ -2,7 +2,7 @@ section.oferta {
   position: relative;
   z-index: 4;
 
-  padding: 80px 0 40px;
+  padding: 40px 0 40px;
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
@@ -56,7 +56,7 @@ section.oferta {
         letter-spacing: 2px;
         color: $main;
         margin: 0;
-        padding: 30px;
+        padding: 30px 0;
         background-color: #fff;
         @media #{$xlg} {
           font-size: 21px;

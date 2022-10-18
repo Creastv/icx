@@ -8,7 +8,7 @@
             </div>
         </div>
     </header>
-    <div class="entry-content">
+    <div class="entry-content entry-content--page ">
         <?php the_content(); ?>
     </div>
     <footer class="entry-footer"></footer>

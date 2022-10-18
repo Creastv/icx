@@ -21,7 +21,7 @@
         </div>
     </header>
     
-    <div class="entry-content">
+    <div class="entry-content entry-content--single">
         <?php the_content(); ?>
     </div>
     <footer class="entry-footer"></footer>

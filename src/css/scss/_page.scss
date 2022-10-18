@@ -1,0 +1,28 @@
+// offer template
+
+.offers{
+    margin-bottom: 160px;
+}
+.offer{
+    padding-top: 100px;
+}
+.offer__header{
+    // width: 100vw;
+    // margin-left: -50vw;
+    // left: 50%;
+    // position: relative;
+    text-align: center;
+    padding: 30px;
+    border-bottom:1px solid $main2;
+    margin-bottom: 40px;
+    h2{
+        margin: 0;
+        padding: 0px;
+        font-size: 45px;
+        font-weight: 900;
+        color: #7a6dc7;
+    }
+}
+.offer__content{
+    margin-bottom: 80px;
+}

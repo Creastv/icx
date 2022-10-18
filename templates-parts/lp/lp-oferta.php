@@ -18,36 +18,39 @@ $args = array(
             </div>
         </div>
         <div class="row row-flex">
-            <?php 
-            $i = 1;
-                $oferty = new WP_Query( $args );
-				while ( $oferty->have_posts() ):
-                $oferty->the_post();
-            ?>
-            <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
-                <article class="card-oferta">
-                    <header>
-                        <h2><?php the_title(); ?></h2>
-                    </header>
-                    <div class="content">
+            <?php if( have_rows('oferty') ): ?>
+
+        <?php while( have_rows('oferty') ): the_row(); 
+            $image = get_sub_field('zdjecie');
+            $title = get_sub_field('tytul');
+            $desc = get_sub_field('opis');
+            $link = get_sub_field('link');
+        ?>
+        <div class="col-4">
+            <article class="card-oferta">
+                <header>
+                    <h2><?php echo $title; ?></h2>
+                </header>
+                <div class="content">
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>">
-                            <?php echo the_post_thumbnail('oferta'); ?>
+                            <a href="<?php echo $link; ?>">
+                            <?php
+                                if( $image ) {
+                                    echo wp_get_attachment_image( $image, 'oferta' );
+                                }
+                            ?>
                             </a>
                         </div>
-                       <?php the_excerpt(); ?>
-                    </div>
-                    <div class="cta">
-                        <a href="<?php the_permalink(); ?>" class="btn"><span>Więcej</span> <span> ></span></a>
-                    </div>
-                </article>
-            </div>
-            <?php
-            $i++;
-            endwhile;
-            
-			wp_reset_query(); ?>
+                       <?php echo $desc; ?>
+                </div>
+                <div class="cta">
+                    <a href="<?php echo $link; ?>" class="btn"><span>Więcej</span> <span> ></span></a>
+                </div>
+            </article>
         </div>
         
+        <?php endwhile; ?>
+        <?php endif; ?>
+        </div>
     </div>
 </section>

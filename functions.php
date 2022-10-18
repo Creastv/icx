@@ -50,6 +50,6 @@ function icx_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'icx_scripts' );
 require get_template_directory() . '/func/clean-up.php';
-require get_template_directory() . '/func/cpt.php';
+// require get_template_directory() . '/func/cpt.php';
 
 

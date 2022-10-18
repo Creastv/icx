@@ -1,8 +1,14 @@
 #kontakt {
+  margin-top: 100px;
+
+}
+.page-template-landing-page{
+#kontakt {
   margin-top: -107px;
        @media #{$md} {
         margin-top: 0px;
        }
+}
 }
 #footer {
   position: relative;

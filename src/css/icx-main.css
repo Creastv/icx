@@ -186,6 +186,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: calc(100% - 30px);
@@ -198,7 +204,7 @@ body {
 
 @media only screen and (max-width: 998px) {
   .row {
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 
@@ -486,6 +492,15 @@ body {
 .navbar .nav-brand svg {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  width: 128px;
+  height: 86px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .nav-brand svg {
+    width: 100px;
+    height: 50px;
+  }
 }
 
 .navbar .header-nav {
@@ -1167,6 +1182,12 @@ section.o-nas .col-2 .wrap-content:nth-child(3) {
   width: 110%;
 }
 
+@media only screen and (max-width: 998px) {
+  section.o-nas .col-2 .wrap-content:nth-child(3) {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   section.o-nas .col-2 .wrap-content:nth-child(3) {
     width: 100%;
@@ -1187,6 +1208,12 @@ section.o-nas .wrap-content {
 
 section.o-nas .wrap-content .space {
   width: 31%;
+}
+
+@media only screen and (max-width: 998px) {
+  section.o-nas .wrap-content .space {
+    width: 10%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1260,7 +1287,8 @@ section.o-nas .img-o-nas {
 
 @media only screen and (max-width: 998px) {
   section.o-nas .img-o-nas {
-    max-width: initial;
+    max-width: 200px;
+    display: none;
   }
 }
 
@@ -1271,6 +1299,7 @@ section.o-nas .img-o-nas {
     width: 80%;
     display: block;
     margin: 0 auto;
+    display: none;
   }
 }
 

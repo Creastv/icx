@@ -41,6 +41,12 @@
     flex: auto;
     svg {
       transition: all 0.3s;
+      width: 128px;
+      height: 86px;
+      @media #{$sm} {
+        width: 100px;
+        height: 50px;
+      }
     }
   }
   .header-nav {

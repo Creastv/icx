@@ -24,6 +24,9 @@ body {
   max-width: 1584px;
   width: 88%;
   margin: 0 auto;
+  @media #{$lg} {
+    width: 95%;
+  }
   @media #{$sm} {
     width: calc(100% - 30px);
   }
@@ -32,7 +35,7 @@ body {
 .row {
   padding: 0 50px;
   @media #{$md} {
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 .row-left {

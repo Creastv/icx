@@ -13,6 +13,9 @@ h6 {
 }
 p {
   font-size: 18px;
+  @media #{$xlg} {
+    font-size: 16px;
+  }
   @media #{$sm} {
     // font-size: 16px !important;
   }
@@ -33,6 +36,9 @@ p {
 .title-section {
   display: inline-block;
   margin-bottom: 42px;
+   @media #{$xlg} {
+    margin-bottom: 30px;
+  }
   @media #{$sm} {
     margin-bottom: 30px;
   }
@@ -43,6 +49,9 @@ p {
     margin: 0;
     padding: 0;
     position: relative;
+    @media #{$xlg} {
+      font-size: 58px;
+    }
     @media #{$sm} {
       font-size: 41px;
     }
@@ -57,6 +66,12 @@ p {
       position: absolute;
       top: 48%;
       right: -80px;
+      @media #{$xlg} {
+        width: 23px;
+        height: 15px;
+        top: 47%;
+        right: -56px;
+      }
       @media #{$sm} {
         width: 23px;
         height: 13px;

@@ -88,6 +88,10 @@
           text-transform: uppercase;
           text-decoration: none;
           position: relative;
+          @media #{$xlg} {
+            font-size: 19px;
+            padding: 0 30px;
+          }
           span{
             position: relative;
             &:before{

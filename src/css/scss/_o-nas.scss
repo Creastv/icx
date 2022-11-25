@@ -3,6 +3,9 @@ section.o-nas {
   // margin-top: -180px;
   position: relative;
   z-index: 2;
+  @media #{$xlg} {
+    padding: 65px 0 40px;
+  }
   @media #{$md} {
     margin-top: 0px;
   }
@@ -88,6 +91,11 @@ section.o-nas {
       border-left: 50px solid $main2;
       border-bottom: 47px solid transparent;
       display: block;
+      @media #{$xlg} {
+        border-top: 39px solid transparent;
+        border-left: 38px solid #7a6dc7;
+        border-bottom: 38px solid transparent;
+      }
       @media #{$sm} {
         position: relative;
         top: -16px;
@@ -107,9 +115,10 @@ section.o-nas {
           font-size: 23px;
           letter-spacing: 2px;
           line-height: 35px;
-        @media #{$xlg} {
-          font-size: 18px;
-        }
+          @media #{$xlg} {
+            line-height: 26px;
+            font-size: 16px;
+          }
       }
     }
   }

@@ -1,11 +1,13 @@
 section.oferta {
   position: relative;
   z-index: 4;
-
   padding: 40px 0 40px;
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
+   @media #{$xlg} {
+    padding: 25px 0 40px;
+   }
   @media #{$sm} {
     padding: 40px 0;
   }
@@ -60,6 +62,7 @@ section.oferta {
         background-color: #fff;
         @media #{$xlg} {
           font-size: 21px;
+          padding: 10px 0 25px 0;
         }
       }
     }
@@ -86,8 +89,8 @@ section.oferta {
         letter-spacing: 2px;
         line-height: 35px;
         @media #{$xlg} {
-          font-size: 18px!important;
-          line-height: 26px;
+          font-size: 16px!important;
+          line-height: 24px;
         }
       }
     }
@@ -96,6 +99,10 @@ section.oferta {
       justify-content: end;
       a {
         transform: translate(0, -50%);
+         @media #{$xlg} {
+          font-size: 18px;
+          padding: 25px 30px;
+        }
         span {
           transition: all 0.3s;
         }

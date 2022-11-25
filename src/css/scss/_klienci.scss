@@ -30,6 +30,11 @@ section.klienci {
       border-left: 46px solid #7a6dc7;
       border-bottom: 47px solid transparent;
       display: block;
+      @media #{$xlg} {
+        border-top: 35px solid transparent;
+        border-left: 35px solid #7a6dc7;
+        border-bottom: 35px solid transparent;
+      }
       @media #{$sm} {
         top: 10%;
         width: 0;
@@ -44,6 +49,9 @@ section.klienci {
     margin-bottom: 0;
     .title {
       font-size: 48px;
+       @media #{$xlg} {
+        font-size: 35px;
+       }
       @media #{$sm} {
         font-size: 41px;
       }
@@ -103,6 +111,9 @@ section.klienci {
     justify-content: space-between;
     align-items: center;
     padding: 45px 0;
+    @media #{$xlg} {
+      padding: 15px 0px;
+    }
      @media #{$sm} {
       flex-wrap: wrap;
       justify-content: center;

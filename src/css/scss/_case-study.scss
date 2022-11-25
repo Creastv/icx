@@ -4,6 +4,9 @@ section.case-study {
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
+  @media #{$xlg} {
+    padding: 40px 0;
+  }
   @media #{$sm} {
     padding: 40px 0;
   }
@@ -97,6 +100,9 @@ section.case-study {
           margin: 0;
           padding: 0;
           margin-bottom: 30px;
+           @media #{$xlg} {
+            font-size: 24px;
+          }
         }
       }
       .left {
@@ -145,7 +151,8 @@ section.case-study {
           letter-spacing: 2px;
           line-height: 35px;
           @media #{$xlg} {
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 26px;
           }
         }
         .btn{

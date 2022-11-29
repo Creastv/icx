@@ -1825,6 +1825,10 @@ section.case-study .case .wrap-case .right .btn {
   font-family: "Futura PT";
 }
 
+textarea {
+  height: 130px;
+}
+
 .accept {
   color: #fff !important;
   font-size: 14px;

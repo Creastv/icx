@@ -1367,6 +1367,14 @@ section.slider .tringle {
   top: 18%;
 }
 
+@media only screen and (max-width: 1400px) {
+  section.slider .tringle {
+    max-width: 65%;
+    top: 25%;
+    max-height: 90%;
+  }
+}
+
 @media only screen and (max-width: 998px) {
   section.slider .tringle {
     top: 160px;

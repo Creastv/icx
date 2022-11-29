@@ -418,12 +418,25 @@ body {
   height: 100%;
 }
 
+@media only screen and (max-width: 1400px) {
+  .wrap-footer-inf {
+    padding-left: 30px;
+  }
+}
+
 .wrap-footer-inf .footer-info {
   font-size: 21px;
   line-height: 50px;
   letter-spacing: 2px;
   margin: 0;
   color: #fff;
+}
+
+@media only screen and (max-width: 1400px) {
+  .wrap-footer-inf .footer-info {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 #kontakt .title-section {
@@ -1398,29 +1411,19 @@ section.slider .content-wraper .content {
 }
 
 section.slider .content-wraper .content h1 {
-  font-size: 80px;
-  font-size: 4.3vw;
-  line-height: 81px;
-  line-height: 4.3vw;
   color: #fff;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
   padding-top: 48px;
+  font-size: 71px;
+  line-height: 93px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   section.slider .content-wraper .content h1 {
-    font-size: 80px;
-    font-size: 7vw;
-    line-height: 7vw;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  section.slider .content-wraper .content h1 {
-    font-size: 51px;
-    line-height: 56px;
+    font-size: 41px;
+    line-height: 53px;
   }
 }
 
@@ -1433,25 +1436,15 @@ section.slider .content-wraper .content .line {
 
 section.slider .content-wraper .content p {
   font-family: 'URW DIN light';
-  margin-top: 55px;
-  font-size: 41px;
-  font-size: 2vw;
+  margin-top: 35px;
+  font-size: 31px;
   letter-spacing: 1px;
   color: #fff;
 }
 
 @media only screen and (max-width: 1400px) {
   section.slider .content-wraper .content p {
-    font-size: 31px;
-    font-size: 2.5vw;
-    line-height: 3.5vw;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  section.slider .content-wraper .content p {
-    font-size: 31px !important;
-    line-height: 36px;
+    font-size: 21px;
   }
 }
 
@@ -1786,12 +1779,42 @@ section.case-study .case .wrap-case .right .btn {
   width: 100%;
   padding: 10px 27px;
   font-size: 21px;
-  letter-spacing: 3px;
   border: none;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 1400px) {
+  .group-form .form-control {
+    font-size: 16px;
+  }
 }
 
 .group-form textarea {
   height: 165px;
+}
+
+.wpcf7-acceptance label span {
+  font-size: 12px;
+}
+
+.wpcf7-acceptance .wpcf7-list-item {
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Futura PT";
+}
+
+:-ms-input-placeholder {
+  font-family: "Futura PT";
+}
+
+::-ms-input-placeholder {
+  font-family: "Futura PT";
+}
+
+::placeholder {
+  font-family: "Futura PT";
 }
 
 .accept {
@@ -1814,8 +1837,7 @@ section.case-study .case .wrap-case .right .btn {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1px;
-  padding: 21px 56px;
+  padding: 10px 50px;
   color: #004e9d;
   border: none;
   background-color: #00f6ff;
@@ -1845,5 +1867,6 @@ section.case-study .case .wrap-case .right .btn {
 
 .wpcf7-not-valid-tip {
   position: absolute;
+  font-size: 14px;
 }
 /*# sourceMappingURL=icx-main.css.map */

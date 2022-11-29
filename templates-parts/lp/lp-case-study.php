@@ -29,10 +29,16 @@ $title = get_field('tytul_cs');
                                 </div>
                                 <div class="right">
                                     <div class="header">
+                                    <?php if($tyt) { ?>
                                     <h3><?php echo $tyt; ?></h3>
                                     </div>
+                                    <?php } ?>
+                                    <?php if($opis) { ?>
                                     <p><?php echo $opis; ?></p>
+                                    <?php } ?>
+                                    <?php if($pdf) { ?>
                                     <a href="<?php echo $pdf['url']; ?>" target="_blank" class="btn">Pobierz PDF ></a>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>

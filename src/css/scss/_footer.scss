@@ -64,12 +64,20 @@
   padding-left: 50px;
   border-left: 1px solid $main2;
   height: 100%;
+  @media #{$xlg} {
+    padding-left: 30px;
+     
+  }
   .footer-info {
     font-size: 21px;
     line-height: 50px;
     letter-spacing: 2px;
     margin: 0;
     color: #fff;
+    @media #{$xlg} {
+      font-size: 18px;
+      line-height: 35px;
+    }
   }
 }
 

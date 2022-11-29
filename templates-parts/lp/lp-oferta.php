@@ -10,6 +10,7 @@ $args = array(
 
 <section id="oferta" class="oferta" data-aos="fade-right" data-aos-duration="1000">
     <div class="container">
+        <?php if($title) { ?>
         <div class="row row-flex">
             <div class="col-1">
                 <div class="title-section">
@@ -17,9 +18,9 @@ $args = array(
                 </div>
             </div>
         </div>
+        <?php } ?>
         <div class="row row-flex">
-            <?php if( have_rows('oferty') ): ?>
-
+        <?php if( have_rows('oferty') ): ?>
         <?php while( have_rows('oferty') ): the_row(); 
             $image = get_sub_field('zdjecie');
             $title = get_sub_field('tytul');
@@ -48,7 +49,6 @@ $args = array(
                 </div>
             </article>
         </div>
-        
         <?php endwhile; ?>
         <?php endif; ?>
         </div>
